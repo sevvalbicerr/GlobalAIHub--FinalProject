@@ -1,3 +1,6 @@
+# Urban Sound Classification
+
+
 Dataset: https://urbansounddataset.weebly.com/
 
 Librosa: https://librosa.org/doc/latest/index.html
@@ -5,7 +8,7 @@ Librosa: https://librosa.org/doc/latest/index.html
 OpenCV :  https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 - Bu projede UrbanSounds8K veri seti kullanılarak şehirde duyulan seslerin sınıflandırılması gerçekleştirildi. 
 
-# Spectrogramların oluşturulması: 
+## Spectrogramların oluşturulması: 
 - Ses dosyalarından oluşan datasette bulunan 8732 veri incelendi. Spectrogramları oluştururken Librosa kullanıldı. 
 - Librosa müzik ve ses analizi için kullanılan bir Python paketidir.
 - Ses dosyalarının spectrogramları "librosa.feature.melspectrogram()" kullanılarak oluşturuldu. 
@@ -13,7 +16,7 @@ OpenCV :  https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
  ![spect](https://user-images.githubusercontent.com/41507884/195982427-c5560195-d0a8-42ed-9f14-0a8827b4fd7a.png)
 
 
-# Preproccesing:
+## Preproccesing:
 - Spectrogram verileri tek tek okunarak grayscale dönüşüm, resizing, normalizasyon işlemleri gerçekleştirildi. 
 - Bu işlemler gerçekleştirilirken bir görüntü işleme kütüphanesi olan OpenCV kullanıldı.
 - İşlemler gerçekleştirildikten sonra veriler etiketleriyle birlikte bir listeye eklendi.
@@ -21,7 +24,7 @@ OpenCV :  https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 - Bu liste kullanılarak train\test\val veri setleri hazırlandı. Bir bölümü üzerinde model çalışılması (train) diğer bölüm üzerinde model iyileştirilmesi (validation) ve başka bir bölümde de test edilmesi amacıyla modelleme yapmadan önce verilerin 3 ayrı parçaya ayrılması gerekiyor.
 - Veri setlerinin ayrıştırılması için "sklearn" kütüphanesinden yararlanıldı.
 
-# Model:
+## Model:
 - CNN modeli oluşturmak için "TensorFlow" kütüphanesi kullanıldı. 
 - İlk modelde activasyon fonk. "ReLU", "Softmax"; optimizer "Adam" ve loss fonk. "sparse_categorical_crossentropy"; Batch size "64", epoch "20" olarak belirlendi.
 
