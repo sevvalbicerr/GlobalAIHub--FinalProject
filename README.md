@@ -30,7 +30,7 @@ OpenCV :  https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 
 ![model1acc](https://user-images.githubusercontent.com/41507884/195982656-e50002f4-e393-4998-937f-4b4128f679c6.png)![model1loss](https://user-images.githubusercontent.com/41507884/195982668-735ef8e2-30bd-47fc-a39d-307f08a6dadd.png)
 
-- Performans metrikleri: Accuracy: 0.8305 loss: 0.6600 şeklinde hesaplandı. 
+- Performans metrikleri: Accuracy: 0.8305 loss: 0.6600 olarak hesaplandı. 
 - Hiperparametre optimizasyonu için yeni bir model oluşturuldu. 
 
 - İkinci modelde activasyon fonk. "ReLU", "Softmax"; optimizer "RMSProp"; loss fonk. "sparse_categorical_crossentropy"; Batch size "128", epoch "30" olarak belirlendi.
@@ -38,6 +38,6 @@ OpenCV :  https://docs.opencv.org/4.x/d9/df8/tutorial_root.html
 
 ![model2acc](https://user-images.githubusercontent.com/41507884/195982895-bdd407b1-e5a4-4024-ab11-77bb4dd9e9bf.png)![model2loss](https://user-images.githubusercontent.com/41507884/195982894-42d21c7a-8c3c-4ed6-b010-609d002296ff.png)
 
-- Performans metrikleri: Accuracy: 0.9255 loss: 0.3379  şeklinde hesaplandı. 
+- Performans metrikleri: Accuracy: 0.9255 loss: 0.3379  olarak hesaplandı. 
 
 
