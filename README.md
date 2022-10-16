@@ -1,4 +1,4 @@
-# Urban Sound Classification
+Global AI Hub Derin Öğrenme Bootcamp Final Projesi
 
 
 Dataset: https://urbansounddataset.weebly.com/
